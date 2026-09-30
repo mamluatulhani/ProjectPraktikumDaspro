@@ -16,13 +16,15 @@ public class ContohVariabel00 {
         total = sc.nextInt();
 
         if (isMember) {
-            if (total>500_000) {
+            if (total>5000_000) {
                 diskon=50_000;
-            } else {
+            } else if (total>500_000){
                 diskon=25_000;
+            } else{
+                diskon=10_000;
             }
         } else {
-            if (total>200_000) {
+            if (total>2000_000) {
                 diskon=10_000;
             } else {
                 diskon=0;
